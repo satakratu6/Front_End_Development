@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS border</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        .none{border-style: none;}
+        .dotted{border-style: dotted;border width: 30px;}
+        .solid{border-style: dashed;border-width: 3px;}
+        .groove{border-style: groove;border-width: 10px;}
+        .double{border-style: double;border width: 30px;}
+        .ridge{border-style: ridge;border-width: 10px;}
+        .inset{border-style: inset;border-width: 10px;}
+        .outset{border-style: outset;border-width:10px;}
+        #margin{
+            border:10px solid black;
+            background-color: pink;
+            /* margin:150px 230px 50px 180px; */
+            padding: 150px 230px 50px 180px;
+        }
+        #margin2{
+            border:8px dotted black;
+            background-color:brown;
+            margin:150px 230px 50px 180px;
+            padding:120px 200px 20px 160px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Border Properties</h1>
+    <p class="none">No border</p>
+    <p class="dotted">Dotted boorder</p>
+    <p class="dashed">Dashed border</p>
+    <p class="solid">Solid border</p>
+    <p class="groove">Groove border</p>
+    <p class="double">Double border</p>
+    <p class="ridge">Ridge border</p>
+    <p class="inset">Inset border</p>
+    <p class="outset">Outset border</p>
+    <h1>Margin Properties</h1>
+    <div id="margin">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+    </div>
+    <div id="margin2">
+        <p>Name: Satakratu Chakraborty <br> Branch: Computer Science
+        </p>
+    </div>
+</body>
+</html>
