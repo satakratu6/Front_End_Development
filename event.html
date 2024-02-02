@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Example of the addEventListener</p>
+    <button id="btn">Click me</button>
+    <p id="para"></p>
+    <p id="quo"></p>
+    <script>
+        document.getElementById("btn").addEventListener("click",fun); //click=event, fun=function, document.getElementById("btn")=element name
+        function  fun(){
+            document.getElementById("para").innerHTML="Hello My Name is Satakratu"+"<br>"+"Welcome to LPU";
+            document.getElementById("quo").innerHTML="What is your name?";
+
+        }
+    </script>
+</body>
+</html>
