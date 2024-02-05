@@ -8,7 +8,7 @@
 <body>
     <center>
 <div>
-<form>
+<form name="myForm" onsubmit="return(jsvalidation())">
                 <table bgcolor=seagreen cellpadding="10">
                     <h2>Don't have an account? !I want to join?!</h2>
 
@@ -21,11 +21,16 @@
                         <td><input name="LastName" type="text" placeholder="LastName"></td>
                     </tr>
                     <tr>
+                        
                         <td>Gender</td>
                         <td><input type="radio" name="gender" value="male" checked> Male
                             <input type="radio" name="gender" value="female"> female
                             <input type="radio" name="gender" value="other">Other
                         </td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td><input name="email" type="text" placeholder="email"></td>
                     </tr>
                     <tr>
                         <td>Select city</td>
@@ -63,6 +68,21 @@
                 </table>
             </form>
         </div>
+        <script type="text/javascript">
+            function jsvalidation(){
+                if(document.myForm.Firstname.value==""){
+                    alert("name cannot be left blank");
+                    document.myForm.Firstname.focus();
+                    return false;
+                }
+                if(document.myForm.Lasttname.value==""){
+                    alert("name cannot be left blank");
+                    document.myForm.Firstname.focus();
+                    return false;
+                }
+            }
+        </script>
+        
     </center>
 </body>
 </html>
