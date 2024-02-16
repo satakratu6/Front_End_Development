@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+</head>
+<body>
+  
+ 
+        <input type="text">
+    <button id="btn" onclick="func()">Cube</button>
+    <p id="demo"></p>
+    </form>
+    <script>
+        const stu = {
+            firstName :"Sahil",
+            lastName : "Nayak"
+        }
+        func = () =>{
+          let a =  document.querySelector("input").value;
+          let b = Number(a);
+          alert(a*a*a);
+          document.getElementById("demo").innerHTML = stu.firstName + stu.lastName;
+        }
+    </script>
+</body>
+</html>
