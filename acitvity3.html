@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Error Example</title>
+</head>
+<body>
+
+<h1>Error Example</h1>
+
+<script>
+  // Syntax Error
+  console.log("This is a syntax error" 
+
+  // Reference Error
+  console.log(nonExistentVariable); 
+  // Type Error
+  let num = 10;
+  num.toUpperCase(); 
+
+  // Range Error
+  let arr = [1, 2, 3];
+  console.log(arr[5]); 
+
+  // Error due to user input
+  let userInput = prompt("Enter a number:");
+  if (isNaN(userInput)) {
+    console.log("Not a number!");
+  } else {
+    console.log("Square of the number:", userInput * userInput);
+  }
+
+  // Error due to data processing
+  let data = "Hello World";
+  for (let i = 0; i <= data.length; i++) { 
+    console.log(data[i]);
+  }
+</script>
+
+</body>
+</html>

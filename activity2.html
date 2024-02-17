@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Errors Demo</h2>
+
+<button onclick="myFunction()">Click me</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    try {
+        documentGetElementById("demo").innerHTML = "Hello World!";
+    } catch(err) {
+        throw new Error("An error occurred: " + err);
+    }
+
+    try {
+        console.log(x);
+    } catch(err) {
+        throw new Error("An error occurred: " + err);
+    }
+
+    try {
+        var obj = null;
+        console.log(obj.property);
+    } catch(err) {
+        throw new Error("An error occurred: " + err);
+    }
+
+    try {
+        var arr = new Array(-1);
+    } catch(err) {
+        throw new Error("An error occurred: " + err);
+    }
+
+    try {
+        var userNumber = prompt("Enter a number:");
+        var result = userNumber * 10;
+        if (isNaN(result)) {
+            throw new Error("You did not enter a valid number!");
+        }
+    } catch(err) {
+        throw new Error("An error occurred: " + err);
+    }
+}
+</script>
+
+</body>
+</html>

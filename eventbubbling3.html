@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .abc{
+            border: 20px solid;
+            padding: 50px;
+        }
+    </style>
 </head>
 <body>
     <form id="myForm" class="abc">
@@ -12,9 +18,9 @@
         </div>
     </form>
     <script>
-        myForm.addEventListener{click,function(){
-            this.style.bordercolor="yellow";
-        }};
+        document.getElementById('myForm').addEventListener('click', function(){
+            this.style.borderColor = "yellow";
+        });
     </script>
 </body>
 </html>
