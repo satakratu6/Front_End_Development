@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello World!</title>
+  </head>
+<body>
+  <script type = "text/javascript">
+       
+    function jsvalidaion() 
+    {
+    
+       if( document.myForm.name.value == "" ) 
+       {
+          alert( "Name cannot be left blank" );
+          document.myForm.name.focus() ;
+          return false;
+       }
+       if( document.myForm.email.value == "" ) 
+       {
+          alert( "Email cannot be left blank" );
+          document.myForm.email.focus() ;
+          return false;
+       }
+       
+       if( document.myForm.pass.value == "" ) 
+       {
+          alert( "Password cannot be left blank" );
+          document.myForm.pass.focus() ;
+          return false;
+       }
+      
+      if(document.myForm.chec.checked==false)
+       {
+          alert("Please agree to the terms and conditions");
+          document.myForm.chec.focus() ;
+          return false;
+        } 
+    }
+</script>
+<div>
+
+<form name="myForm" onsubmit = "return(jsvalidaion());">
+<table>
+<h2 style="text-align:center"><big><b><font color="black">Don't have an account?! Want to join us?!</font></b></big></h2>
+
+
+  <tr style="color:blue">
+  <td>Name</td>
+  <td><input name="name" type="text" placeholder="FirstName LastName"></td>
+  <td id="error"></td>
+ </tr>
+ 
+  <tr style="color: blue;">
+   <td>Email ID</td>
+   <td><input name="email" type="email" placeholder="Email ID"> </td>
+  </tr>
+  
+   <tr style="color:green">
+  <td>Select city</td>
+  <td><select name="cities">
+    <option value="Select">Select</option>  
+  <option value="Noida">Noida</option>
+  <option value="Delhi">Delhi</option>
+  <option value="Mumbai">Mumbai</option>
+  <option value="Cape Town">Cape Town</option>
+</select></td>
+</tr>
+
+ <tr style="color:black">
+ <td>Gender</td>
+ <td> <input type="radio" name="gender" value="male"> Male
+  <input type="radio" name="gender" value="female"> Female
+  <input type="radio" name="gender" value="other"> Other
+ </tr>
+
+<tr style="color:blue">
+ <td>Password</td>
+ <td><input type="password" name="pass" placeholder="Password"></td>
+ </tr>
+
+ <tr style="color:green">
+ <td></td>
+ <td><input type="checkbox" name="chec" value="I agree to the terms and conditions">I agree to the terms and conditions</td>
+ </tr>
+
+<tr><td></td>
+<td> <input type="submit"> <input type="reset"></td>
+
+</tr>
+
+
+</table>
+</form>
+</div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="dynamicParagraph">This is a dynamic paragraph.</p>
+    <button onclick="toggleImage()">Toggle Image Visibility</button>
+    <img id="toggleImage" src="image1.jpeg" style="display: block;">
+    <button onclick="changeBackgroundColor()">Change Background Color</button>
+    <script>
+        document.getElementById('dynamicParagraph').textContent = "New dynamic content.";
+
+        function toggleImage() {
+            var img = document.getElementById('toggleImage');
+            if (img.style.display === "none") {
+                img.style.display = "block";
+            } else {
+                img.style.display = "none";
+            }
+        }
+
+        function changeBackgroundColor() {
+            document.body.style.backgroundColor = "lightblue";
+        }
+
+        var newElement = document.createElement("div");
+        newElement.textContent = "Newly created element.";
+        document.querySelector("body").appendChild(newElement);
+    </script>
+</body>
+</html>
