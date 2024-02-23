@@ -1,27 +1,30 @@
-<!DOCTYPE html>  
-<html>  
-<body>  
-<p> This is an example of adding multiple events to the same element. </p>  
-<p> Click the following button to see the effect. </p>  
-<button id = "btn"> Click me </button>  
-<p id = "para1"></p>  
-<p id = "para2"></p>  
-<script>  
-function fun1() {  
-    alert("Welcome to LPU ");  
-}  
-   
-function fun2() {  
-   document.getElementById("para1").innerHTML =  "This is second function";  
-  
-}  
-function fun3() {  
-   document.getElementById("para2").innerHTML =  "This is third function";  
-}  
-var mybtn = document.getElementById("btn");  
-mybtn.addEventListener("click", fun1);  
-mybtn.addEventListener("click", fun2);  
-mybtn.addEventListener("click", fun3);  
-</script>  
-</body>  
-</html>  
+<!DOCTYPE html>
+<html>
+
+<body>
+   <p> This is an example of adding multiple events to the same element. </p>
+   <p> Click the following button to see the effect. </p>
+   <button id="btn"> Click me </button>
+   <p id="para1"></p>
+   <p id="para2"></p>
+   <script>
+      function fun1() {
+         alert("Welcome to LPU ");
+      }
+
+      function fun2() {
+         document.getElementById("para1").innerHTML = "This is second function";
+        
+
+      }
+      function fun3() {
+         document.getElementById("para2").innerHTML = "This is third function";
+      }
+      var mybtn = document.getElementById("btn");
+      mybtn.addEventListener("click", fun1);
+      mybtn.addEventListener("click", fun2);
+      mybtn.addEventListener("click", fun3);  
+   </script>
+</body>
+
+</html>
