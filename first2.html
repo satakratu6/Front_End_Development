@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+    <script>
+        var stud, a="",i;
+        stud={
+            "name":"ravi",
+            "cgpa":8.7,
+            "courses":["HTML","CSS","JS"]
+        };
+        // for(i in stud.courses){
+        //     a+=stud.courses[i]+"<br>";
+        // }
+        // document.getElementById("demo").innerHTML=a;
+        // const obj=JSON.parse(stud);
+        document.getElementById("demo").innerHTML=stud.name+"<br>"+stud.cgpa+"<br>"+stud.courses;
+        var stud1={
+            name:"ravi",
+            cgpa:8.7,
+            courses:"HTML"
+        }
+        var stud2=JSON.stringify(stud1);
+        document.getElementById("demo2").innerHTML=stud2;
+        </script>
+</body>
+</html>
+        

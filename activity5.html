@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Interactive Page</title>
+    <style>
+        #image-container {
+            width: 300px;
+            height: 300px;
+        }
+        #thumbnail-container img {
+            width: 50px;
+            height: 50px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <button id="myButton">Click me</button>
+    <p id="myText">Hello World!</p>
+
+    <div id="image-container">
+        <img id="main-image" src="image1.jpeg" alt="Main Image">
+    </div>
+    <div id="thumbnail-container">
+    </div>
+
+    <script>
+        document.getElementById("myButton").addEventListener("click", function() {
+            document.getElementById("myText").innerHTML = "You clicked the button!";
+        });
+
+        var images = ["image2.jpeg", "image3.jpeg", "image4.jpeg"]; 
+        var thumbnailContainer = document.getElementById("thumbnail-container");
+
+        images.forEach(function(image) {
+            var imgElement = document.createElement("img");
+            imgElement.src = image;
+            imgElement.addEventListener("click", function() {
+                document.getElementById("main-image").src = image;
+            });
+            thumbnailContainer.appendChild(imgElement);
+        });
+    </script>
+</body>
+</html>
