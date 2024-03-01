@@ -1,0 +1,53 @@
+<!-- Assign tasks that involve using jQuerySelectors to target specific elements and manipulate their content, attributes or styles.
+Participants can dynamically update HTML elements based on JSON data.
+Assign the task to replace the local jQuery file with a cdn link. 
+Participants should modify the code to use jQuery from the CDN and ensure it funtions as expected -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>jQuery Tasks</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+<h1>jQuery Tasks</h1>
+
+<div id="task1">
+  <h2>Task 1: Change Text</h2>
+  <p>This is the initial text.</p>
+  <button onclick="changeText()">Change Text</button>
+</div>
+
+<div id="task2">
+  <h2>Task 2: Change Style</h2>
+  <p>This paragraph's background color will change.</p>
+  <button onclick="changeStyle()">Change Style</button>
+</div>
+
+<div id="task3">
+  <h2>Task 3: Change Attribute</h2>
+  <img src="image1.jpeg" alt="Before">
+  <button onclick="changeAttribute()">Change Attribute</button>
+</div>
+
+<script>
+// Task 1: Change Text
+function changeText() {
+  $('#task1 p').text('Text changed using jQuery!');
+}
+
+// Task 2: Change Style
+function changeStyle() {
+  $('#task2 p').css('background-color', 'lightblue');
+}
+
+// Task 3: Change Attribute
+function changeAttribute() {
+  $('#task3 img').attr('src', 'image2.jpeg').attr('alt', 'After');
+}
+</script>
+
+</body>
+</html>
