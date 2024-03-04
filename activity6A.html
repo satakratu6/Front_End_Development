@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CDN Odyssey</title>
+    <!-- Replace the local jQuery file with the CDN link -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        /* Sample CSS for demonstration */
+        .highlight {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to CDN Odyssey!</h1>
+    <div id="content">
+        <p>This is a sample paragraph.</p>
+        <button id="changeText">Change Text</button>
+        <button id="changeStyle">Change Style</button>
+    </div>
+    <script>
+        // Sample JSON data for demonstration
+        var jsonData = {
+            "text": "New Text Content",
+            "color": "red"
+        };
+
+        // Function to change text content
+        $("#changeText").click(function() {
+            $("#content p").text(jsonData.text);
+        });
+
+        // Function to change style
+        $("#changeStyle").click(function() {
+            $("#content p").css("color", jsonData.color);
+        });
+    </script>
+</body>
+</html>

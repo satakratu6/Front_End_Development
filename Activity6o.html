@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>jQuery Tasks</title>
+<!-- Replace local jQuery file with CDN link -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+<h1>jQuery Tasks</h1>
+
+<div id="task1">
+  <h2>Task 1: Change Text</h2>
+  <p>This is the initial text.</p>
+  <button onclick="changeText()">Change Text</button>
+</div>
+
+<div id="task2">
+  <h2>Task 2: Change Style</h2>
+  <p>This paragraph's background color will change.</p>
+  <button onclick="changeStyle()">Change Style</button>
+</div>
+
+<div id="task3">
+  <h2>Task 3: Change Attribute</h2>
+  <img src="image1.jpeg" alt="Before">
+  <button onclick="changeAttribute()">Change Attribute</button>
+</div>
+
+<script>
+// Sample JSON data
+var jsonData = {
+  "task1_text": "Text changed using JSON!",
+  "task2_background_color": "lightblue",
+  "task3_image_src": "newimage.jpg",
+  "task3_image_alt": "After"
+};
+
+function changeText() {
+  $('#task1 p').text(jsonData.task1_text);
+}
+
+function changeStyle() {
+  $('#task2 p').css('background-color', jsonData.task2_background_color);
+}
+
+function changeAttribute() {
+  $('#task3 img').attr('src', jsonData.task3_image_src).attr('alt', jsonData.task3_image_alt);
+}
+</script>
+
+</body>
+</html>

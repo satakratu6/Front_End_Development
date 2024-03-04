@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <h1>This is first paragraph</h1>
+    <p>your section is K22MK</p> -->
+    <script type="text/javascript" language="javascipt">
+        $(document).ready(function () {
+            $("#b1").click(function () {
+                alert($("h1").text());
+            });
+            $("#b2").click(function () {
+                alert($("h1").html());
+            });
+            $("#b3").click(function () {
+                alert($("#lpu").attr("href"));
+            });
+            $("img").click(function () {
+                alert($("#lpu").attr("href"));
+            });
+        });
+    </script>
+    <h1>LPU</h1>
+    <!-- <h2>Country</h2> -->
+    <!-- <h3>Image</h3> -->
+    <!-- <h4>Address</h4> -->
+    <h1>Lovely Profession University</h1>
+    <h2>Punjab</h2>
+    <img src="image1.jpeg" height="200px" width="200px" alt=""> <br>
+    <a href="https://www.lpu.in/" id="lpu">click</a>
+
+
+    <button id="b3">HTML</button>
+    <button id="b2">TEXT</button>
+    <button id="b1">HTML</button>
+
+</body>
+
+</html>
