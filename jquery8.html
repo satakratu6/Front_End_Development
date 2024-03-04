@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <div style="background-color: aqua; height: 50%; width: 50%;">
+        <p>Hi, what is your name?</p>
+        <p>where are you from?</p>
+    </div>
+
+    <button id="hideButton">Hide Paragraph</button>
+
+    <script>
+        $(document).ready(function(){
+            $("#hideButton").click(function(){
+                $("div").empty();
+            });
+        });
+    </script>
+</body>
+</html>

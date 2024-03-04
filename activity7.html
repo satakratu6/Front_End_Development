@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <form id="myForm" action="">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <button id="hideButton">Hide Form</button>
+
+    <script>
+        $(document).ready(function(){
+            $("#hideButton").click(function(){
+                $("#myForm").hide();
+            });
+        });
+    </script>
+</body>
+</html>
