@@ -1,0 +1,32 @@
+[
+    {
+        "id":1,
+        "name":"Satakratu",
+        "age":13,
+        "dep":"CST",
+        "ADD":"LPU"
+    },
+    {
+        "id":2,
+        "name":"Sata",
+        "age":13,
+        "dep":"CST",
+        "ADD":"LPU"
+
+    },{
+        "id":3,
+        "name":"ATTSSHh",
+        "age":89,
+        "dep":"CQS",
+        "ADD":"LPU"
+
+    },{
+        "id":4,
+        "name":"KOLKA",
+        "age":17,
+        "dep":"CSE",
+        "ADD":"LPU"
+
+    }
+
+]
